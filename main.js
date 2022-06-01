@@ -21,7 +21,8 @@ function uploadimg() {
 
 function my_keydown(e)
 {
-	console.log(keyPressed);
+	    keyPressed = e.keyCode;
+	    console.log(keyPressed);
 	
 		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))
 		aplhabetkey();
@@ -36,7 +37,7 @@ function my_keydown(e)
 		document.getElementById("d1").innerHTML="You pressed a Number key";
 	}
 
-	keyPressed = e.keyCode;
+	
 
 function aplhabetkey()
 {
